@@ -1,0 +1,70 @@
+body{
+   background:  #d8c7a7;
+    font-family: Georgia, serif;
+    font-style: italic;
+     font-size: 2rem;
+    line-height: 1.8;
+}
+.quote-card {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 3rem;
+
+  background:url("../src/assets/textures/old-notebook-texture.jpeg");
+   position: relative;
+  background-color: #f2e6ce;
+  background-size: cover;
+
+  border-radius:  8px 12px 6px 14px;
+
+  box-shadow:0 4px 8px rgba(0,0,0,0.15),
+  0 12px 30px rgba(0,0,0,0.08);
+  border-left: 3px solid rgba(0,0,0,0.08);
+}
+
+.quote-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../src/assets/textures/old-notebook-texture.jpeg");
+  opacity: 0.15;
+
+  pointer-events: none;
+}
+
+.quote {
+  font-size: 2rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.author {
+  text-align: right;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.reflections {
+  margin-top: 2rem;
+}
+
+.book-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.book-header h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-author {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.book-stats {
+  margin-top: 1rem;
+}
